@@ -1,3 +1,1 @@
-function show-args
-    set --show argv
-end
+set --show argv
