@@ -4,7 +4,7 @@ set -l m "Press the ENTER key to exit."
 set -l ny (math $LINES - 1)
 set -l nx (math $COLUMNS - (string length $m) - 1)
 if test $nx -lt 1
-    set nx 0 # since x is never 0
+    set nx 0 # since x is never 0 the notice will not be displayed
 end
 set -l y 1
 while test $y -le $LINES
