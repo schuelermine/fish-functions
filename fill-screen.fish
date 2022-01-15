@@ -1,3 +1,4 @@
+clear
 set_color --background brwhite black
 set -l m "Press the ENTER key to exit."
 set -l ny (math $LINES - 1)
@@ -23,6 +24,9 @@ while test $y -le $LINES
             echo -n " "
         end
         set x (math $x + 1)
+    end
+    if test $y -lt $LINES
+        echo
     end
     set y (math $y + 1)
 end
