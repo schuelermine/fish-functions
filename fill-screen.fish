@@ -26,4 +26,5 @@ while test $y -le $LINES
     end
     set y (math $y + 1)
 end
-read --prompt-str ""
+read --prompt-str "" -n 1
+clear
