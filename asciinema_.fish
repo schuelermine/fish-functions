@@ -1,3 +1,3 @@
 asciinema rec (if set -q argv[2]
-    echo -c "$argv[2..-1]"
-) (mktemp --tmpdir=$HOME/$argv[1] tmp.XXXXXXXX-ascii.cast)
+    string join \n -c "$argv[2..-1]"
+end) (mktemp --tmpdir=$HOME/$argv[1] tmp.XXXXXXXX-ascii.cast)
